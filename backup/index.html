@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <ul id="box_list" class="app_list" data-width="3" data-height="6" data-maxheight="8">
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25ED%2595%259C%25EA%25B8%2580%25EA%25B3%25BC%25EC%25BB%25B4%25ED%2593%25A8%25ED%2584%25B0%25EA%25B7%25B8%25EB%25A3%25B9%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fgw.hancom.com%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fstart%252Fthumbnail%252F2018%252F03%252F30%252F22%252Feee45b24cf414065a517bb9b03b789be_180x112.JPG%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25ED%2595%259C%25EA%25B8%2580%25EA%25B3%25BC%25EC%25BB%25B4%25ED%2593%25A8%25ED%2584%25B0%25EA%25B7%25B8%25EB%25A3%25B9.JPG%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">한글과컴퓨터그룹</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://gw.hancom.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/start/thumbnail/2018/03/30/22/eee45b24cf414065a517bb9b03b789be_180x112.JPG') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li
+        class="box_app gadget read_only"
+        data-boxwidth="1"
+        data-type="gadget"
+        data-boxinfo="%22G17873%22"
+        data-prefs="%7B%22isEmpty%22%3A%22false%22%2C%22favoritesList%22%3A%22%5B%7B%5C%22t%5C%22%3A%5C%22%EB%84%A4%EC%9D%B4%EB%B2%84%5C%22%2C%5C%22l%5C%22%3A%5C%22http%3A%2F%2Fwww.naver.com%2F%5C%22%2C%5C%22d%5C%22%3A%5C%22portal1%5C%22%7D%2C%7B%5C%22t%5C%22%3A%5C%22%EB%8B%A4%EC%9D%8C%5C%22%2C%5C%22l%5C%22%3A%5C%22http%3A%2F%2Fwww.daum.net%2F%5C%22%2C%5C%22d%5C%22%3A%5C%22portal2%5C%22%7D%2C%7B%5C%22t%5C%22%3A%5C%22%EA%B5%AC%EA%B8%80%5C%22%2C%5C%22l%5C%22%3A%5C%22http%3A%2F%2Fwww.google.co.kr%2F%5C%22%2C%5C%22d%5C%22%3A%5C%22portal4%5C%22%7D%2C%7B%5C%22t%5C%22%3A%5C%22%EC%BD%94%EB%A6%AC%EC%95%84%5C%22%2C%5C%22l%5C%22%3A%5C%22http%3A%2F%2Fwww.korea.com%2F%5C%22%7D%2C%7B%5C%22t%5C%22%3A%5C%22%EC%98%AC%EB%A0%88%5C%22%2C%5C%22l%5C%22%3A%5C%22http%3A%2F%2Fwww.olleh.com%2F%5C%22%7D%2C%7B%5C%22t%5C%22%3A%5C%22T%26nbsp%3Bworld%5C%22%2C%5C%22l%5C%22%3A%5C%22http%3A%2F%2Fwww.tworld.co.kr%2F%5C%22%7D%5D%22%7D"
+        data-aid="G17873"
+        data-refresh="0"
+      >
+        <h3><span class="title d_title">즐겨찾기</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_favorites app_start">
+          <div id="errorBox" style="display: none"></div>
+          <div id="mainBox" style="display: block">
+            <div class="wrap">
+              <div class="thumb">
+                <ul id="mainList">
+                  <li class="pos1 link_list list_portal1">
+                    <a href="http://www.naver.com/" title="네이버" class="move-page"
+                      ><span class="bg"><span class="favicon"></span><span class="title">네이버</span></span
+                      ><span class="cover"><span class="title">네이버</span><span class="blank"></span></span
+                    ></a>
+                  </li>
+                  <li class="pos2 link_list list_portal2">
+                    <a href="http://www.daum.net/" title="다음" class="move-page"
+                      ><span class="bg"><span class="favicon"></span><span class="title">다음</span></span
+                      ><span class="cover"><span class="title">다음</span><span class="blank"></span></span
+                    ></a>
+                  </li>
+                  <li class="pos3 link_list list_portal4">
+                    <a href="http://www.google.co.kr/" title="구글" class="move-page"
+                      ><span class="bg"><span class="favicon"></span><span class="title">구글</span></span
+                      ><span class="cover"><span class="title">구글</span><span class="blank"></span></span
+                    ></a>
+                  </li>
+                  <li class="pos4">
+                    <a href="http://www.korea.com/" title="코리아" class="move-page"
+                      ><span class="bg"
+                        ><span class="favicon"><img src="https://post3.zumst.com/widget/apps/17867/favicons/ko/koreacom.png?2012090501" alt="" /></span><span class="title">코리아</span></span
+                      ><span class="cover"><span class="title">코리아</span><span class="blank"></span></span
+                    ></a>
+                  </li>
+                  <li class="pos5">
+                    <a href="http://www.olleh.com/" title="올레" class="move-page"
+                      ><span class="bg"
+                        ><span class="favicon"><img src="https://post3.zumst.com/widget/apps/17867/favicons/ol/ollehcom.png?2012090501" alt="" /></span><span class="title">올레</span></span
+                      ><span class="cover"><span class="title">올레</span><span class="blank"></span></span
+                    ></a>
+                  </li>
+                  <li class="pos6">
+                    <a href="http://www.tworld.co.kr/" title="T&nbsp;world" class="move-page"
+                      ><span class="bg"
+                        ><span class="favicon"><img src="https://post3.zumst.com/widget/apps/17867/favicons/tw/tworldcokr.png?2012090501" alt="" /></span><span class="title">T&nbsp;world</span></span
+                      ><span class="cover"><span class="title">T&nbsp;world</span><span class="blank"></span></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="settingBox" style="display: none">
+            <div class="setting">
+              <ul class="radio">
+                <li><input type="radio" id="settingRadio1" name="settingRadio" value="add" checked="checked" /><label for="radio1">즐겨찾기 추가하기</label></li>
+                <li><input type="radio" id="settingRadio2" name="settingRadio" value="mgr" /><label for="radio2">즐겨찾기 관리하기</label></li>
+              </ul>
+              <div class="btn"><a id="nextBtn"></a><a id="cancelBtn"></a></div>
+            </div>
+          </div>
+          <div id="searchSettingBox" style="display: none">
+            <div class="search">
+              <div class="top">
+                <h2>검색</h2>
+                <fieldset>
+                  <legend>검색</legend>
+                  <span class="search_bg">
+                    <input type="text" id="searchText" class="add_input" title="추가할 사이트 이름 입력" maxlength="200" size="20" autocomplete="off" />
+                  </span>
+                </fieldset>
+              </div>
+              <div id="commentText" class="con" style="display: none"></div>
+              <div id="suggestBox" class="ulwrap ul_num" style="display: none">
+                <ul id="suggestList"></ul>
+              </div>
+              <div class="btn"><a id="nextBtn"></a><a id="cancelBtn"></a></div>
+            </div>
+          </div>
+          <div id="mgrSettingBox" style="display: none">
+            <div class="setting setting_list">
+              <div class="ulwrap">
+                <ul id="favoritesList"></ul>
+              </div>
+              <div class="btn"><a id="okBtn"></a><a id="cancelBtn"></a></div>
+            </div>
+          </div>
+          <div id="warningBox" style="display: none">
+            <div class="setting">
+              <div id="warningContent" class="warning"></div>
+              <div class="btn single"><a id="completeBtn"></a></div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="box_app gadget" data-boxwidth="1" data-type="gadget" data-boxinfo="%22G17848%22" data-prefs="%7B%22Bank%22%3A%220%2C1%2C2%2C3%2C4%22%7D" data-aid="G17848" data-refresh="0">
+        <h3><span class="title d_title">은행 바로가기</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div style="width: 180px; height: 112px; background-image: url(//post3.zumst.com/legocms/2014/08/14/14/4f9baca9428a44a7baff779f2b441775.jpg)">
+          <iframe
+            class="d_iframe_gadget"
+            data-src="//widget.zum.com/view/widget/iframe?widget_id=G17848&amp;variants="
+            data-aid="G17848"
+            data-refresh="0"
+            data-prefs='{"Bank":"0,1,2,3,4"}'
+            frameborder="no"
+            scrolling="no"
+            style="width: 180px; height: 112px"
+            src="cid:frame-DE0227EA8F976CE439255D204CE4D493@mhtml.blink"
+          ></iframe>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L9598%22">
+        <h3><span class="title d_title">클리앙</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.clien.net/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/39/b0/39b0a1537158aa23a0284cbedf6efa6c.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L823%22">
+        <h3><span class="title d_title">케이벤치</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.kbench.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/b5/fb/b5fb7b46e4fa115f51c1093814d57cf1.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25ED%2580%2598%25EC%259D%25B4%25EC%2582%25AC%25EC%25A1%25B4%5C%22%2C%5C%22link%5C%22%3A%5C%22https%253A%252F%252Fquasarzone.com%252F%5C%22%2C%5C%22img%5C%22%3A%5C%22%252F%252Fpost3.zumst.com%252Fstart%252Fthumbnail%252F2020%252F09%252F22%252F10%252F0e4549ad00a74ed8956a20db2eca7e60_180x112.PNG%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25ED%2580%2598%25EC%259D%25B4%25EC%2582%25AC%25EC%25A1%25B4.PNG%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">퀘이사존</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="https://quasarzone.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/start/thumbnail/2020/09/22/10/0e4549ad00a74ed8956a20db2eca7e60_180x112.PNG') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L1378%22">
+        <h3><span class="title d_title">쿨엔조이</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.coolenjoy.net/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/e5/4d/e54dd55d5b842ba340685f8c8da27ba3.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L427%22">
+        <h3><span class="title d_title">파코즈 하드웨어</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.parkoz.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/66/70/667072e631b95d24e24291b7dd7c07e1.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L8118%22">
+        <h3><span class="title d_title">2CPU</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.2cpu.co.kr/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/26/27/2627ed766e719f274c7b1b0bf564805e.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L111%22">
+        <h3><span class="title d_title">다나와</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.danawa.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/9c/09/9c09120f60bbe8d2a0a1e504e887194e.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L126%22">
+        <h3><span class="title d_title">에누리닷컴</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.enuri.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/05/44/0544ea56a263c295b04dddc08c7d26b8.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22play.google.com%5C%22%2C%5C%22link%5C%22%3A%5C%22https%253A%252F%252Fplay.google.com%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fstatic.zum.com%252Fthumbnail%252F10%252F8a%252F108aac1394b19bca7ca7e987a5c9d069.jpg%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22undefined%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">play.google.com</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="https://play.google.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/10/8a/108aac1394b19bca7ca7e987a5c9d069.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L146%22">
+        <h3><span class="title d_title">루리웹</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.ruliweb.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/e7/43/e7439eb6e598880e46fe3f436ba8b43f.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EB%2594%2594%25EC%2594%25A8%25EC%259D%25B8%25EC%2582%25AC%25EC%259D%25B4%25EB%2593%259C%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fgall.dcinside.com%252Fboard%252Flists%252F%253Fid%253Dimmovables%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F1b%252F9c%252F1b9cb94d724a93b9cafcad1bef6beb99.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">디씨인사이드</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://gall.dcinside.com/board/lists/?id=immovables" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/1b/9c/1b9cb94d724a93b9cafcad1bef6beb99.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EB%25BD%2590%25EB%25BF%258C%5C%22%2C%5C%22link%5C%22%3A%5C%22https%253A%252F%252Fwww.ppomppu.co.kr%252F%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F1d%252Fa3%252F1da378fb5014a857791291cc248997e9.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">뽐뿌</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="https://www.ppomppu.co.kr/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/1d/a3/1da378fb5014a857791291cc248997e9.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L17784%22">
+        <h3><span class="title d_title">에버노트</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.evernote.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/07/09/0709701d9166e207acba1535e2bd463f.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2598%25A4%25EB%258A%2598%25EC%259D%2598%2520%25EC%259C%25A0%25EB%25A8%25B8%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fwww.todayhumor.co.kr%252F.%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F91%252Fc5%252F91c5372d897ddb7b5f66ac03424a0acf.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">오늘의 유머</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.todayhumor.co.kr/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/91/c5/91c5372d897ddb7b5f66ac03424a0acf.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li class="box_app link" data-boxwidth="1" data-type="link" data-boxinfo="%22L147%22">
+        <h3><span class="title d_title">보배드림</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+        <div class="app_wrap_image_change app_start">
+          <a href="http://www.bobaedream.co.kr/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/65/34/65345082157aa5a4e70f15a7878e6334.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580-ASUS%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%253A8080%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fstart%252Fthumbnail%252F2017%252F03%252F15%252F09%252F96ace8fa60134b8e89703bddf1796180_180x112.png%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580-ASUS.png%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀-ASUS</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me:8080/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/start/thumbnail/2017/03/15/09/96ace8fa60134b8e89703bddf1796180_180x112.png') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580-%25EC%2595%2584%25EC%259D%25B4%25ED%2594%25BC%25ED%2583%2580%25EC%259E%2584%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.iptime.org%253A8000%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F01%252F8f%252F018fbd8829cec2e3e8aefa1ef54a47b7.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀-아이피타임</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.iptime.org:8000/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/01/8f/018fbd8829cec2e3e8aefa1ef54a47b7.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580DSM-%25EA%25B0%2584%25EC%25A0%2591%25EC%2597%25B0%25EA%25B2%25B0%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fquickconnect.to%252Fsemtl%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F54%252F70%252F54700b2b18edb0399abca4ee2cf58589.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀DSM-간접연결</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://quickconnect.to/semtl" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/54/70/54700b2b18edb0399abca4ee2cf58589.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580DSM-HTTP(5000)%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F65%252F10%252F65108207f2b4ba424e446e6592561126.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀DSM-HTTP(5000)</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/65/10/65108207f2b4ba424e446e6592561126.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580DSM-HTTPS%5C%22%2C%5C%22link%5C%22%3A%5C%22https%253A%252F%252Fsemtl.synology.me%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fstart%252Fthumbnail%252F2015%252F07%252F02%252F15%252F3b998fd862c74dfba2320a19c9dac173_180x112.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580DSM.jpg%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀DSM-HTTPS</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="https://semtl.synology.me/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/start/thumbnail/2015/07/02/15/3b998fd862c74dfba2320a19c9dac173_180x112.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580%25ED%258C%258C%25EC%259D%25BC-HTTP(5000)%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%252Ffile%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252Fd6%252F5d%252Fd65dd7885651cff63ae2cff7a0c7a971.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀파일-HTTP(5000)</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me/file" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/d6/5d/d65dd7885651cff63ae2cff7a0c7a971.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580%25EC%2598%25A4%25EB%2594%2594%25EC%2598%25A4-HTTP(5000)%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%252Faudio%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F75%252F0f%252F750f87794d16c6549b755afd14796ae3.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀오디오-HTTP(5000)</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me/audio" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/75/0f/750f87794d16c6549b755afd14796ae3.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580%25EB%25B9%2584%25EB%2594%2594%25EC%2598%25A4-HTTP(5000)%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%252Fvideo%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252Fc3%252Fa8%252Fc3a8fd82c45c6b740a9683cfcbf78c7b.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀비디오-HTTP(5000)</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me/video" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/c3/a8/c3a8fd82c45c6b740a9683cfcbf78c7b.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580%25ED%2586%25A0%25EB%259F%25B0%25ED%258A%25B8-HTTP(5000)%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%252Fdownload%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F91%252F72%252F917294b224acf9448356d02943425358.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀토런트-HTTP(5000)</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me/download" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/91/72/917294b224acf9448356d02943425358.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580%25ED%258F%25AC%25ED%2586%25A0-HTTP%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%252Fphoto%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252Fa2%252Fc6%252Fa2c65fc1260b34506662f409e865c429.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀포토-HTTP</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me/photo" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/a2/c6/a2c65fc1260b34506662f409e865c429.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580%25ED%2594%258C%25EB%25A0%2589%25EC%258A%25A4--HTTP(32400)%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fsemtl.synology.me%253A32400%252Fweb%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252Fba%252Fc5%252Fbac5e9bafc4a08a0d657bc5ef6142682.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀플렉스--HTTP(32400)</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://semtl.synology.me:32400/web" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/ba/c5/bac5e9bafc4a08a0d657bc5ef6142682.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%258A%25AC%25EB%25A7%2581%25EB%25B0%2595%25EC%258A%25A4%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fwatch.slingbox.com%252Fwatch%252Fsling_player%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F56%252F25%252F5625da6fac8e4c3eb0be41a67d64f549.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">슬링박스</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://watch.slingbox.com/watch/sling_player" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/56/25/5625da6fac8e4c3eb0be41a67d64f549.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EB%25B9%25A0%25EC%2582%25AD%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fbbasak.com%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F56%252F4f%252F564fc3db2f409c02f226967c8af0707f.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">빠삭</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://bbasak.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/56/4f/564fc3db2f409c02f226967c8af0707f.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EB%25BD%2590%25EB%25BF%258C%25EB%25AA%25A8%25EC%2595%2584%5C%22%2C%5C%22link%5C%22%3A%5C%22http%253A%252F%252Fppomppumoa.com%252F%5C%22%2C%5C%22img%5C%22%3A%5C%22http%253A%252F%252Fpost3.zumst.com%252Fthumbnail%252F60%252Fac%252F60ac49a5bba154047bce62bbafaeb349.jpg%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">뽐뿌모아</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="http://ppomppumoa.com/" class="d_link" target="_blank">
+            <div
+              class="main d_main"
+              style="background: url('//post3.zumst.com/thumbnail/60/ac/60ac49a5bba154047bce62bbafaeb349.jpg') no-repeat; background-position: center; background-color: #f5f5f5"
+            >
+              <h2 class="blind">해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li
+        class="box_app link d_custom_link"
+        data-boxwidth="1"
+        data-type="link"
+        data-boxinfo="%22%7B%5C%22title%5C%22%3A%5C%22%25EC%2585%2588%25ED%258B%2580%25EC%2595%2584%25ED%258B%2580%25EB%259E%2580%25EC%258B%259C%25EC%2595%2588%5C%22%2C%5C%22link%5C%22%3A%5C%22https%253A%252F%252Fsemtl.atlassian.net%5C%22%2C%5C%22img%5C%22%3A%5C%22%5C%22%2C%5C%22imgFileName%5C%22%3A%5C%22%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%25EB%25A5%25BC%2520%25EB%2593%25B1%25EB%25A1%259D%25ED%2595%25B4%2520%25EC%25A3%25BC%25EC%2584%25B8%25EC%259A%2594.%5C%22%2C%5C%22appVer%5C%22%3A%5C%222%5C%22%2C%5C%22type%5C%22%3A%5C%22link%5C%22%7D%22"
+      >
+        <h3><span class="title d_title">셈틀아틀란시안</span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+
+        <div class="app_wrap_image_change app_start">
+          <a href="https://semtl.atlassian.net/" class="d_link" target="_blank">
+            <div class="main d_main" style="background: url('//lego.zumst.com/resources/current/images/widget/bg_no_image_readonly.gif') center center no-repeat rgb(245, 245, 245)">
+              <h2 class="blind">해당 웹사이트의 이미지가 없습니다.<br />해당 웹사이트로 이동</h2>
+            </div>
+          </a>
+          <a class="regist" id="btn_register_image"><span class="blind">이미지 등록</span></a>
+          <div class="setting d_setting" style="display: none; cursor: default"></div>
+        </div>
+      </li>
+
+      <li class="box_app empty" data-boxwidth="1" data-type="empty" data-boxinfo="%220%22">
+        <h3><span class="title d_title"></span></h3>
+        <div class="btn_app" style="display: none">
+          <span class="setting" style="display: none"
+            ><a class="fire" title="설정"><span class="blind">설정</span></a></span
+          >
+          <span class="close" style="display: none"
+            ><a class="fire" title="삭제"><span class="blind">삭제</span></a></span
+          >
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>

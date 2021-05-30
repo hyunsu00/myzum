@@ -1,0 +1,8 @@
+{
+	"editor.tabSize": 2,
+	"html.format.enable": false,
+	"prettier.disableLanguages": [
+		"html"
+	],
+	"prettier.printWidth": 200,
+}
